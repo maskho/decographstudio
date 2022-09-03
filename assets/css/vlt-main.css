@@ -155,7 +155,6 @@
     line-height: 1.6;
 
     letter-spacing: .01em;
-    text-transform: uppercase;
 }
 
 .vlt-offcanvas-menu__socials a,
@@ -2913,7 +2912,7 @@ body .pp-scrollable
     display: -ms-flexbox;
     display:         flex;
 
-    padding: 2.1875rem 5rem 2.1875rem 2.5rem;
+    padding: 2.1875rem 1rem 2.1875rem 1rem;
 
     color: #fff;
     border-radius: 10px;
