@@ -77,13 +77,20 @@
 	transform: translate(-50%, -50%);
   }
 
-  ul {
+  ul.rentCard {
     list-style-type: none;
 }
 
-  ul li:before {    
+  ul.rentCard li:before {    
     content: '→ ';
     /* margin:0 5px 0 -15px; */
 	margin-left: -20px;
     color: #f00;
+  }
+
+  ul.specialRentCard li:before {    
+    content: '→ ';
+    /* margin:0 5px 0 -15px; */
+	margin-left: -20px;
+    color: yellow;
   }
