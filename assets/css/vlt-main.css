@@ -2912,7 +2912,7 @@ body .pp-scrollable
     display: -ms-flexbox;
     display:         flex;
 
-    padding: 2.1875rem 1rem 2.1875rem 1rem;
+    padding: 2.1875rem 0rem 0rem 0rem;
 
     color: #fff;
     border-radius: 10px;
@@ -2937,10 +2937,7 @@ body .pp-scrollable
 
     content: '';
 
-    opacity: .2; 
-    background-image: url('../img/root/quote.svg');
-    background-position: center;
-    background-size: cover;
+    opacity: .2;
 }
 .vlt-testimonial-item__avatar
 {

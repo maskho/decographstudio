@@ -63,3 +63,27 @@
 	width: 389px;
 	height: 550px;
 }
+
+.containerRateCard {
+	position: relative;
+	text-align: left;
+	color: white;
+  }
+
+  .centeredRateCard {
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	transform: translate(-50%, -50%);
+  }
+
+  ul {
+    list-style-type: none;
+}
+
+  ul li:before {    
+    content: '→ ';
+    /* margin:0 5px 0 -15px; */
+	margin-left: -20px;
+    color: #f00;
+  }
