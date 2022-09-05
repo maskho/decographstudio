@@ -1,737 +1,1369 @@
 <!DOCTYPE html>
 <html class="no-js vlt-is--custom-cursor" lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <title>Decograph Studio</title>
+    <meta
+      name="description"
+      content="Modern &amp; Creative CV/Resume HTML5 Template"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="assets/img/root/decoicon.png" />
+    <!--Framework-->
+    <link rel="stylesheet" href="assets/css/framework/bootstrap.min.css" />
+    <!--Fonts-->
+    <link rel="stylesheet" href="assets/fonts/Inter/style.css" />
+    <!--Plugins-->
+    <link rel="stylesheet" href="assets/css/vlt-plugins.min.css" />
+    <!--Style-->
+    <link rel="stylesheet" href="assets/css/vlt-main.min.css" />
+    <!--Custom-->
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<title>Decograph Studio</title>
-	<meta name="description" content="Modern &amp; Creative CV/Resume HTML5 Template">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!--Favicon-->
-	<link rel="icon" type="image/png" href="assets/img/root/decoicon.png">
-	<!--Framework-->
-	<link rel="stylesheet" href="assets/css/framework/bootstrap.min.css">
-	<!--Fonts-->
-	<link rel="stylesheet" href="assets/fonts/Inter/style.css">
-	<!--Plugins-->
-	<link rel="stylesheet" href="assets/css/vlt-plugins.min.css">
-	<!--Style-->
-	<link rel="stylesheet" href="assets/css/vlt-main.min.css">
-	<!--Custom-->
-	<link rel="stylesheet" href="assets/css/custom.css">
-</head>
+  <body class="animsition">
+    <!--Header-->
+    <header class="vlt-header">
+      <div class="vlt-navbar vlt-navbar--main vlt-navbar--fixed">
+        <div class="vlt-navbar-background"></div>
+        <div class="vlt-navbar-inner">
+          <div class="vlt-navbar-inner--left">
+            <!--Logo--><a class="vlt-navbar-logo" href="index.html"
+              ><img
+                class="black"
+                src="assets/img/root/logo-deco-black.png"
+                alt="decograph" /><img
+                class="white"
+                src="assets/img/root/logo-deco-white.png"
+                alt="decograph"
+            /></a>
+            <!--Contacts-->
+            <nav class="vlt-navbar-contacts d-none d-md-block">
+              <ul>
+                <li>
+                  <a href="https://wa.me/6281216723270">+62 812 1672 3270</a>
+                </li>
+                <li class="sep">/</li>
+                <li>
+                  <a href="mailto:hellodecograph@gmail.com"
+                    >HELLODECOGRAPH@GMAIL.COM</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="vlt-navbar-inner--right">
+            <div class="d-flex align-items-center">
+              <!--Menu Burger--><a
+                class="vlt-menu-burger js-offcanvas-menu-open"
+                href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                  stroke-linejoin="round"
+                >
+                  <line x1="3" y1="12" x2="21" y2="12" />
+                  <line x1="3" y1="6" x2="21" y2="6" />
+                  <line x1="3" y1="18" x2="21" y2="18" /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--Offcanvas Menu-->
+    <div class="vlt-offcanvas-menu">
+      <div class="vlt-offcanvas-menu__header">
+        <!--Locales-->
+        <nav class="vlt-offcanvas-menu__locales">
+          <a class="active" href="#">ID</a>
+        </nav>
+        <!--Menu Burger--><a
+          class="vlt-menu-burger vlt-menu-burger--opened js-offcanvas-menu-close"
+          href="#"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="square"
+            stroke-linejoin="round"
+          >
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" /></svg
+        ></a>
+      </div>
+      <nav class="vlt-offcanvas-menu__navigation">
+        <!--Navigation-->
+        <ul class="sf-menu">
+          <li data-menuanchor="Home"><a href="#Home">Home</a></li>
+          <li data-menuanchor="Services"><a href="#Services">Why</a></li>
+          <li data-menuanchor="Experience">
+            <a href="#Experience">Service</a>
+          </li>
+          <li data-menuanchor="Testimonials">
+            <a href="#Testimonials">Portfolio</a>
+          </li>
+          <li data-menuanchor="Blog"><a href="#Blog">Rate Card</a></li>
+          <li data-menuanchor="Contact"><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="vlt-offcanvas-menu__footer">
+        <!--Socials-->
+        <div class="vlt-offcanvas-menu__socials">
+          <a href="https://www.behance.net/decograph" target="_blank"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14h-8.027c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988h-6.466v-14.967h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zm-3.466-8.988h3.584c2.508 0 2.906-3-.312-3h-3.272v3zm3.391 3h-3.391v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"
+              /></svg></a
+          ><a href="https://dribbble.com/decograph" target="_blank"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 32 32"
+              width="24px"
+              height="24px"
+            >
+              <path
+                d="M 16 4 C 9.382813 4 4 9.382813 4 16 C 4 22.617188 9.382813 28 16 28 C 22.617188 28 28 22.617188 28 16 C 28 9.382813 22.617188 4 16 4 Z M 16 6 C 18.535156 6 20.832031 6.953125 22.59375 8.5 C 22.40625 8.761719 22.152344 9.078125 21.75 9.46875 C 20.894531 10.296875 19.527344 11.292969 17.4375 12.0625 C 16.023438 9.449219 14.636719 7.484375 13.71875 6.25 C 14.449219 6.082031 15.214844 6 16 6 Z M 11.75 6.9375 C 12.570313 8.011719 14.03125 10.003906 15.5 12.65625 C 11.433594 13.734375 7.703125 13.871094 6.21875 13.875 C 6.882813 10.785156 8.960938 8.242188 11.75 6.9375 Z M 23.96875 9.96875 C 25.1875 11.582031 25.945313 13.578125 26 15.75 C 25.109375 15.550781 23.796875 15.355469 22.09375 15.34375 C 21.207031 15.339844 20.203125 15.402344 19.125 15.53125 C 18.875 14.960938 18.605469 14.410156 18.34375 13.875 C 20.585938 13.015625 22.113281 11.882813 23.125 10.90625 C 23.46875 10.570313 23.738281 10.261719 23.96875 9.96875 Z M 16.40625 14.46875 C 16.636719 14.933594 16.871094 15.410156 17.09375 15.90625 C 12.820313 17.089844 9.75 20.714844 8.4375 22.53125 C 6.925781 20.78125 6 18.5 6 16 C 6 15.957031 6 15.917969 6 15.875 C 7.351563 15.890625 11.648438 15.796875 16.40625 14.46875 Z M 22.09375 17.3125 C 23.878906 17.3125 25.113281 17.5625 25.84375 17.75 C 25.378906 20.414063 23.875 22.699219 21.75 24.1875 C 21.351563 21.796875 20.695313 19.523438 19.90625 17.4375 C 20.695313 17.359375 21.441406 17.3125 22.09375 17.3125 Z M 17.875 17.78125 C 18.773438 20.0625 19.527344 22.566406 19.90625 25.21875 C 18.710938 25.722656 17.382813 26 16 26 C 13.707031 26 11.589844 25.230469 9.90625 23.9375 C 10.933594 22.53125 13.953125 18.789063 17.875 17.78125 Z"
+              /></svg></a
+          ><a href="https://wa.me/6281216723270" target="_blank"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="19px"
+              height="19px"
+              fill="currentColor"
+              class="bi bi-whatsapp"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+              /></svg></a
+          ><a href="https://www.instagram.com/decographstudio/" target="_blank"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              width="24px"
+              height="24px"
+            >
+              <path
+                d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"
+              /></svg
+          ></a>
+        </div>
+        <!--Copyright-->
+        <div class="vlt-offcanvas-menu__copyright">
+          <p><b>DECOGRAPH STUDIO</b><br />Great Design, Now in Minutes</p>
+        </div>
+      </div>
+    </div>
+    <!--Site Overlay-->
+    <div class="vlt-site-overlay"></div>
+    <!--Fixed Socials-->
+    <div class="vlt-fixed-socials">
+      <a href="https://www.behance.net/decograph" target="_blank"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+        >
+          <path
+            d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14h-8.027c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988h-6.466v-14.967h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zm-3.466-8.988h3.584c2.508 0 2.906-3-.312-3h-3.272v3zm3.391 3h-3.391v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"
+          /></svg></a
+      ><a href="https://dribbble.com/decograph" target="_blank"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 32 32"
+          width="24px"
+          height="24px"
+        >
+          <path
+            d="M 16 4 C 9.382813 4 4 9.382813 4 16 C 4 22.617188 9.382813 28 16 28 C 22.617188 28 28 22.617188 28 16 C 28 9.382813 22.617188 4 16 4 Z M 16 6 C 18.535156 6 20.832031 6.953125 22.59375 8.5 C 22.40625 8.761719 22.152344 9.078125 21.75 9.46875 C 20.894531 10.296875 19.527344 11.292969 17.4375 12.0625 C 16.023438 9.449219 14.636719 7.484375 13.71875 6.25 C 14.449219 6.082031 15.214844 6 16 6 Z M 11.75 6.9375 C 12.570313 8.011719 14.03125 10.003906 15.5 12.65625 C 11.433594 13.734375 7.703125 13.871094 6.21875 13.875 C 6.882813 10.785156 8.960938 8.242188 11.75 6.9375 Z M 23.96875 9.96875 C 25.1875 11.582031 25.945313 13.578125 26 15.75 C 25.109375 15.550781 23.796875 15.355469 22.09375 15.34375 C 21.207031 15.339844 20.203125 15.402344 19.125 15.53125 C 18.875 14.960938 18.605469 14.410156 18.34375 13.875 C 20.585938 13.015625 22.113281 11.882813 23.125 10.90625 C 23.46875 10.570313 23.738281 10.261719 23.96875 9.96875 Z M 16.40625 14.46875 C 16.636719 14.933594 16.871094 15.410156 17.09375 15.90625 C 12.820313 17.089844 9.75 20.714844 8.4375 22.53125 C 6.925781 20.78125 6 18.5 6 16 C 6 15.957031 6 15.917969 6 15.875 C 7.351563 15.890625 11.648438 15.796875 16.40625 14.46875 Z M 22.09375 17.3125 C 23.878906 17.3125 25.113281 17.5625 25.84375 17.75 C 25.378906 20.414063 23.875 22.699219 21.75 24.1875 C 21.351563 21.796875 20.695313 19.523438 19.90625 17.4375 C 20.695313 17.359375 21.441406 17.3125 22.09375 17.3125 Z M 17.875 17.78125 C 18.773438 20.0625 19.527344 22.566406 19.90625 25.21875 C 18.710938 25.722656 17.382813 26 16 26 C 13.707031 26 11.589844 25.230469 9.90625 23.9375 C 10.933594 22.53125 13.953125 18.789063 17.875 17.78125 Z"
+          /></svg></a
+      ><a href="https://wa.me/6281216723270" target="_blank"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="19px"
+          height="19px"
+          fill="currentColor"
+          class="bi bi-whatsapp"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+          /></svg></a
+      ><a href="https://www.instagram.com/decographstudio/" target="_blank"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+          width="24px"
+          height="24px"
+        >
+          <path
+            d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"
+          /></svg
+      ></a>
+    </div>
+    <!--Main-->
+    <main class="vlt-main">
+      <!--Fullpage Slider-->
+      <div
+        class="vlt-fullpage-slider"
+        data-loop-top=""
+        data-loop-bottom=""
+        data-speed="800"
+      >
+        <!--Home-->
+        <!--Section-->
+        <div
+          class="vlt-section pp-scrollable"
+          data-anchor="Home"
+          data-brightness="dark"
+          style="background-image: url(assets/img/root/red-background.jpg)"
+        >
+          <div class="vlt-section__vertical-align">
+            <div class="vlt-section__content">
+              <!--Particles-->
+              <div class="vlt-section__particles">
+                <div
+                  class="vlt-particle vlt-fade-in-left vlt-custom--1451"
+                  style="
+                    background-image: url(assets/img/root/plus-dark-pattern.png);
+                    transition-duration: 1s;
+                  "
+                ></div>
+                <div
+                  class="vlt-particle d-none d-xl-block vlt-fade-in-right vlt-custom--1512"
+                  style="
+                    background-image: url(assets/img/root/elipse-home-slide.png);
+                    transition-duration: 1.5s;
+                    transition-delay: 300ms;
+                  "
+                ></div>
+                <div
+                  class="vlt-particle vlt-custom--4124"
+                  style="background-image: url(assets/img/page1.png)"
+                ></div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-7 offset-lg-1">
+                    <!--Animated Block-->
+                    <div
+                      class="vlt-animated-block"
+                      style="animation-delay: 0s; animation-duration: 700ms"
+                    >
+                      <h5 class="vlt-display-1 has-white-color">
+                        BERSAMA DECOGRAPH
+                      </h5>
+                      <div class="vlt-gap-10"></div>
+                      <h1 class="vlt-large-heading has-white-color">
+                        Bikin Usahamu <br />Lebih Dikenal
+                      </h1>
+                      <div class="vlt-gap-40"></div>
+                      <div class="row">
+                        <div class="col-auto">
+                          <p class="vlt-services__text has-white-color">
+                            Kami adalah studio design grafis yang berfokus
+                            kepada<br />
+                            layanan design logo dan brand identity. Ratusan
+                            proyek<br />
+                            design logo dari dalam negeri dan luar negeri
+                            telah<br />
+                            kami kerjakan. Bikin logomu di decograph dan<br />
+                            dapatkan hasil yang memuaskan.
+                          </p>
+                          <div class="vlt-gap-20--sm"></div>
+                        </div>
+                      </div>
+                      <div class="vlt-gap-40"></div>
+                      <a class="vlt-link has-white-color" href="#"
+                        >Lihat Portofolio</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Services-->
+        <!--Section-->
+        <div
+          class="vlt-section pp-scrollable"
+          data-anchor="Services"
+          data-brightness="light"
+        >
+          <div class="vlt-section__vertical-align">
+            <div class="vlt-section__content">
+              <!--Particles-->
+              <div class="vlt-section__particles">
+                <div
+                  class="vlt-particle vlt-custom--1259 vlt-fade-in-right"
+                  style="
+                    background-image: url(assets/img/root/plus-light-pattern.png);
+                    animation-delay: 750ms;
+                  "
+                ></div>
+                <div
+                  class="vlt-particle vlt-custom--2355 vlt-fade-in-left"
+                  style="
+                    background-image: url(assets/img/root/elipse-light.png);
+                    animation-delay: 500ms;
+                  "
+                ></div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-2 offset-lg-1 d-none d-lg-block">
+                    <!--Animated Block-->
+                    <div
+                      class="vlt-animated-block"
+                      style="animation-delay: 0s; animation-duration: 700ms"
+                    >
+                      <!--Counter Up-->
+                      <div
+                        class="vlt-counter-up"
+                        data-ending-number="4"
+                        data-animation-speed="1000"
+                        data-delimiter=""
+                      >
+                        <span class="counter">0</span><sup>+</sup>
+                      </div>
+                      <div class="vlt-gap-40"></div>
+                      <h6>
+                        Alasan<br />
+                        Memiliki<br />
+                        Logo yang<br />
+                        Menarik
+                      </h6>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-md-12">
+                    <!--Animated Block-->
+                    <div
+                      class="vlt-animated-block"
+                      style="animation-delay: 100ms; animation-duration: 700ms"
+                    >
+                      <h4>
+                        Selain sebagai ciri khas dan pembeda dari merek yang
+                        lain, ada beberapa alasan lain kenapa logo dan brand
+                        identity sangat penting bagi sebuah merek
+                      </h4>
+                    </div>
+                    <div class="vlt-gap-70"></div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <!--Animated Block-->
+                        <div
+                          class="vlt-animated-block"
+                          style="
+                            animation-delay: 200ms;
+                            animation-duration: 700ms;
+                          "
+                        >
+                          <!--Services-->
+                          <div class="vlt-services">
+                            <h5 class="vlt-services__title">
+                              <a href="#">First impression yang baik</a>
+                            </h5>
+                            <p class="vlt-services__text">
+                              Logo adalah pengenalan pertama sebuah bisnis
+                              kepada pembeli. logo dapat menjadi “undangan” yang
+                              menarik untuk pembeli melihat lebih lanjut tentang
+                              usahamu
+                            </p>
+                            <!-- <a class="vlt-services__link vlt-link-with-arrow" href="#"><span class="vlt-link-with-arrow__text">Discover more</span><span class="vlt-link-with-arrow__icon">🡒</span></a> -->
+                          </div>
+                        </div>
+                        <div class="vlt-gap-40"></div>
+                      </div>
+                      <div class="col-md-6">
+                        <!--Animated Block-->
+                        <div
+                          class="vlt-animated-block"
+                          style="
+                            animation-delay: 300ms;
+                            animation-duration: 700ms;
+                          "
+                        >
+                          <!--Services-->
+                          <div class="vlt-services">
+                            <h5 class="vlt-services__title">
+                              <a href="#">Mudah bersaing</a>
+                            </h5>
+                            <p class="vlt-services__text">
+                              Memiliki logo dan brand identity yang efektif
+                              dapat membantu bisnismu menonjol di hadapan
+                              pelanggan potensial di pasar bisnismu
+                            </p>
+                            <!-- <a class="vlt-services__link vlt-link-with-arrow" href="#"><span class="vlt-link-with-arrow__text">Discover more</span><span class="vlt-link-with-arrow__icon">🡒</span></a> -->
+                          </div>
+                        </div>
+                        <div class="vlt-gap-40"></div>
+                      </div>
+                      <div class="col-md-6">
+                        <!--Animated Block-->
+                        <div
+                          class="vlt-animated-block"
+                          style="
+                            animation-delay: 400ms;
+                            animation-duration: 700ms;
+                          "
+                        >
+                          <!--Services-->
+                          <div class="vlt-services">
+                            <h5 class="vlt-services__title">
+                              <a href="#">Mudah Diingat</a>
+                            </h5>
+                            <p class="vlt-services__text">
+                              Perusahaan dengan desain dan branding yang buruk
+                              sulit diingat sehingga peluang untuk pembeli
+                              datang lagi menjadi minim. Desain logo yang kuat
+                              dapat membantu menjamin bisnismu selalu diingat.
+                            </p>
+                            <!-- <a class="vlt-services__link vlt-link-with-arrow" href="#"><span class="vlt-link-with-arrow__text">Discover more</span><span class="vlt-link-with-arrow__icon">🡒</span></a> -->
+                          </div>
+                        </div>
+                        <div class="vlt-gap-40--sm"></div>
+                      </div>
+                      <div class="col-md-6">
+                        <!--Animated Block-->
+                        <div
+                          class="vlt-animated-block"
+                          style="
+                            animation-delay: 500ms;
+                            animation-duration: 700ms;
+                          "
+                        >
+                          <!--Services-->
+                          <div class="vlt-services">
+                            <h5 class="vlt-services__title">
+                              <a href="#">Menarik Perhatian</a>
+                            </h5>
+                            <p class="vlt-services__text">
+                              Logo juga dapat digunakan perusahaan untuk
+                              menonjolkan keunikannya. Kadang seorang konsumen
+                              berminat suatu produk karena melihat logo yang
+                              menarik.
+                            </p>
+                            <!-- <a class="vlt-services__link vlt-link-with-arrow" href="#"><span class="vlt-link-with-arrow__text">Discover more</span><span class="vlt-link-with-arrow__icon">🡒</span></a> -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Experience-->
+        <!--Section-->
+        <div
+          class="vlt-section pp-scrollable"
+          data-anchor="Experience"
+          data-brightness="dark"
+        >
+          <div class="vlt-section__vertical-align">
+            <div class="vlt-section__content">
+              <!--Ken Burn Effect-->
+              <div class="vlt-section__ken-burn-background">
+                <img src="assets/img/attachment-02.jpg" alt="" />
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-10 offset-lg-1">
+                    <!--Animated Block-->
+                    <div
+                      class="vlt-animated-block"
+                      style="animation-delay: 0s; animation-duration: 700ms"
+                    >
+                      <div
+                        class="d-block d-md-flex align-items-center justify-content-between"
+                      >
+                        <h4 class="has-white-color">
+                          Bikin <span class="has-first-color">Logo</span> dan
+                          Brand Identity di Decograph
+                        </h4>
+                        <div class="vlt-gap-30--sm"></div>
+                        <div class="vlt-timeline-slider-controls">
+                          <span class="prev">🡐</span
+                          ><span class="pagination"></span
+                          ><span class="next">🡒</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="vlt-gap-50"></div>
+                    <!--Animated Block-->
+                    <div
+                      class="vlt-animated-block"
+                      style="animation-delay: 100ms; animation-duration: 700ms"
+                    >
+                      <!--Timeline Slider-->
+                      <div class="vlt-timeline-slider">
+                        <div class="swiper-container">
+                          <div class="swiper-wrapper">
+                            <div>
+                              <!--Timeline Slider Item-->
+                              <div class="vlt-timeline-item">
+                                <div class="row">
+                                  <div class="col-sm-12 col-md-3">
+                                    <span class="vlt-timeline-item__year"
+                                      >01</span
+                                    >
+                                  </div>
+                                  <div class="col-sm-12 col-md-3">
+                                    <h5 class="vlt-timeline-item__title">
+                                      Prosedurnya Gampang.
+                                    </h5>
+                                  </div>
+                                  <div class="col-sm-12 col-md-5 offset-md-1">
+                                    <p class="vlt-timeline-item__text">
+                                      Prosedur pemesanan logo di decograph
+                                      sangatlah mudah sehingga kamu akan segera
+                                      mendapatkan logo terbaik dari kami.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!--Timeline Slider Item-->
+                              <div class="vlt-timeline-item">
+                                <div class="row">
+                                  <div class="col-sm-12 col-md-3">
+                                    <span class="vlt-timeline-item__year"
+                                      >02</span
+                                    >
+                                  </div>
+                                  <div class="col-sm-12 col-md-3">
+                                    <h5 class="vlt-timeline-item__title">
+                                      Design Berkualitas.
+                                    </h5>
+                                  </div>
+                                  <div class="col-sm-12 col-md-5 offset-md-1">
+                                    <p class="vlt-timeline-item__text">
+                                      Design logo yang dihasilkan berkualitas ,
+                                      unik dan yang pasti berbeda dengan
+                                      kompetitormu.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!--Timeline Slider Item-->
+                              <div class="vlt-timeline-item">
+                                <div class="row">
+                                  <div class="col-sm-12 col-md-3">
+                                    <span class="vlt-timeline-item__year"
+                                      >03</span
+                                    >
+                                  </div>
+                                  <div class="col-sm-12 col-md-3">
+                                    <h5 class="vlt-timeline-item__title">
+                                      Berpengalaman lebih dari 6 tahun.
+                                    </h5>
+                                  </div>
+                                  <div class="col-sm-12 col-md-5 offset-md-1">
+                                    <p class="vlt-timeline-item__text">
+                                      Design logo dikerjakan oleh designer
+                                      berpengalaman yang telah menjuarai kontes
+                                      Internasional dan berpengalaman lebih dari
+                                      6 tahun
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div>
+                              <!--Timeline Slider Item-->
+                              <div class="vlt-timeline-item">
+                                <div class="row">
+                                  <div class="col-sm-12 col-md-3">
+                                    <span class="vlt-timeline-item__year"
+                                      >04</span
+                                    >
+                                  </div>
+                                  <div class="col-sm-12 col-md-3">
+                                    <h5 class="vlt-timeline-item__title">
+                                      Design Berdasarkan Riset Pasar.
+                                    </h5>
+                                  </div>
+                                  <div class="col-sm-12 col-md-5 offset-md-1">
+                                    <p class="vlt-timeline-item__text">
+                                      Design logo dikerjakan berdasarkan riset
+                                      pasar dan disesuaikan dengan Target Pasar
+                                      bisnismu.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!--Timeline Slider Item-->
+                              <div class="vlt-timeline-item">
+                                <div class="row">
+                                  <div class="col-sm-12 col-md-3">
+                                    <span class="vlt-timeline-item__year"
+                                      >05</span
+                                    >
+                                  </div>
+                                  <div class="col-sm-12 col-md-3">
+                                    <h5 class="vlt-timeline-item__title">
+                                      Bergaransi.
+                                    </h5>
+                                  </div>
+                                  <div class="col-sm-12 col-md-5 offset-md-1">
+                                    <p class="vlt-timeline-item__text">
+                                      Jika design tidak memenuhi ekspektasi,
+                                      project dapat direfund dan uang kembali
+                                      100%
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                              <!--Timeline Slider Item-->
+                              <div class="vlt-timeline-item">
+                                <div class="row">
+                                  <div class="col-sm-12 col-md-3">
+                                    <span class="vlt-timeline-item__year"
+                                      >06</span
+                                    >
+                                  </div>
+                                  <div class="col-sm-12 col-md-3">
+                                    <h5 class="vlt-timeline-item__title">
+                                      Harga Bersahabat.
+                                    </h5>
+                                  </div>
+                                  <div class="col-sm-12 col-md-5 offset-md-1">
+                                    <p class="vlt-timeline-item__text">
+                                      Kamu akan mendapatkan logo yang
+                                      berkualitas dengan harga yang bersahabat
+                                      dan terjangkau.
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="vlt-gap-50"></div>
+                    <!--Animated Block-->
+                    <div
+                      class="vlt-animated-block"
+                      style="animation-delay: 200ms; animation-duration: 700ms"
+                    >
+                      <!--Button--><a
+                        class="vlt-btn vlt-btn--primary"
+                        href="https://wa.me/6281216723270"
+                        target="_blank"
+                        ><span class="vlt-btn__text">Order Sekarang</span
+                        ><span class="vlt-btn__icon vlt-btn__icon--right"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="currentColor"
+                            class="bi bi-whatsapp"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+                            /></svg></span
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Testimonials-->
+        <!--Section-->
+        <div
+          class="vlt-section pp-scrollable"
+          data-anchor="Testimonials"
+          data-brightness="dark"
+        >
+          <div class="vlt-section__vertical-align">
+            <div class="vlt-section__content">
+              <!--Ken Burn Effect-->
+              <div
+                class="vlt-section__ken-burn-background"
+                style="background-color: black"
+              >
+                <img src="assets/img/corak-darkbg.png" alt="" />
+              </div>
+              <div class="containerPortfolio">
+                <div class="row">
+                  <div class="col-lg-10 offset-lg-1">
+                    <!--Animated Block-->
+                    <div
+                      class="vlt-animated-block"
+                      style="animation-delay: 0s; animation-duration: 700ms"
+                    >
+                      <div
+                        class="d-block d-md-flex align-items-center justify-content-between"
+                      >
+                        <h1 class="has-white-color">Portfolio</h1>
+                        <div class="vlt-gap-30--sm"></div>
+                        <div class="vlt-testimonial-slider-controls">
+                          <span class="prev">🡐</span
+                          ><span class="pagination"></span
+                          ><span class="next">🡒</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="vlt-gap-20"></div>
+                    <!--Animated Block-->
+                    <div
+                      class="vlt-animated-block"
+                      style="animation-delay: 100ms; animation-duration: 700ms"
+                    >
+                      <!--Testimonial Slider-->
+                      <div class="vlt-testimonial-slider">
+                        <div class="swiper-container">
+                          <div class="swiper-wrapper">
+                            <!--Testimonial Item-->
+                            <div class="vlt-testimonial-item">
+                              <img
+                                src="assets/img//portfolio-slide1-resized.png"
+                                alt="portfolio"
+                              />
+                            </div>
+                            <!--Testimonial Item-->
+                            <div class="vlt-testimonial-item">
+                              <img
+                                src="assets/img//portfolio-slide2-resized.png"
+                                alt="portfolio"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="vlt-gap-30"></div>
+                    <div
+                      class="row justify-content-md-between"
+                      style="margin: 0px 64px 0px 32px"
+                    >
+                      <div class="col-md-auto col-sm-4">
+                        <h6 class="has-white-color">
+                          Lihat Portofolio lainnya di
+                        </h6>
+                      </div>
+                      <div class="vlt-gap-40--sm"></div>
+                      <div class="col-md-auto col-sm-4">
+                        <!--Animated Block-->
+                        <div
+                          class="vlt-animated-block"
+                          style="
+                            animation-delay: 200ms;
+                            animation-duration: 700ms;
+                          "
+                        >
+                          <!--Button--><a
+                            class="vlt-btn vlt-btn--primary"
+                            style="padding-right: 42px; padding-left: 42px"
+                            href="https://www.instagram.com/decographstudio/"
+                            target="_blank"
+                            ><span class="vlt-btn__text">Instagram</span></a
+                          >
+                        </div>
+                        <div class="vlt-gap-40--sm"></div>
+                      </div>
+                      <div class="col-md-auto col-sm-4">
+                        <!--Animated Block-->
+                        <div
+                          class="vlt-animated-block"
+                          style="
+                            animation-delay: 200ms;
+                            animation-duration: 700ms;
+                          "
+                        >
+                          <!--Button--><a
+                            class="vlt-btn vlt-btn--primary"
+                            style="padding-right: 42px; padding-left: 42px"
+                            href="https://www.behance.net/decograph"
+                            target="_blank"
+                            ><span class="vlt-btn__text">Behance</span></a
+                          >
+                        </div>
+                        <div class="vlt-gap-40--sm"></div>
+                      </div>
+                      <div class="col-md-auto col-sm-4">
+                        <!--Animated Block-->
+                        <div
+                          class="vlt-animated-block"
+                          style="
+                            animation-delay: 200ms;
+                            animation-duration: 700ms;
+                          "
+                        >
+                          <!--Button--><a
+                            class="vlt-btn vlt-btn--primary"
+                            style="padding-right: 42px; padding-left: 42px"
+                            href="https://dribbble.com/decograph"
+                            target="_blank"
+                            ><span class="vlt-btn__text">Dribbble</span></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Blog-->
+        <!--Section-->
+        <div
+          class="vlt-section pp-scrollable"
+          data-anchor="Blog"
+          data-brightness="dark"
+        >
+          <!--Ken Burn Effect-->
+          <div
+            class="vlt-section__ken-burn-background"
+            style="background-color: black"
+          >
+            <img src="assets/img/corak-darkbg.png" alt="" />
+          </div>
 
-<body class=" animsition">
-	<!--Header-->
-	<header class="vlt-header">
-		<div class="vlt-navbar vlt-navbar--main vlt-navbar--fixed">
-			<div class="vlt-navbar-background"></div>
-			<div class="vlt-navbar-inner">
-				<div class="vlt-navbar-inner--left">
-					<!--Logo--><a class="vlt-navbar-logo" href="index.html"><img class="black" src="assets/img/root/logo-deco-black.png" alt="decograph"><img class="white" src="assets/img/root/logo-deco-white.png" alt="decograph"></a>
-					<!--Contacts-->
-					<nav class="vlt-navbar-contacts d-none d-md-block">
-						<ul>
-							<li><a href="https://wa.me/6281216723270">+62 812 1672 3270</a></li>
-							<li class="sep">/</li>
-							<li><a href="mailto:hellodecograph@gmail.com">HELLODECOGRAPH@GMAIL.COM</a></li>
-						</ul>
-					</nav>
-				</div>
-				<div class="vlt-navbar-inner--right">
-					<div class="d-flex align-items-center">
-						<!--Menu Burger--><a class="vlt-menu-burger js-offcanvas-menu-open" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
-								<line x1="3" y1="12" x2="21" y2="12" />
-								<line x1="3" y1="6" x2="21" y2="6" />
-								<line x1="3" y1="18" x2="21" y2="18" /></svg></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
-	<!--Offcanvas Menu-->
-	<div class="vlt-offcanvas-menu">
-		<div class="vlt-offcanvas-menu__header">
-			<!--Locales-->
-			<nav class="vlt-offcanvas-menu__locales"><a class="active" href="#">ID</a></nav>
-			<!--Menu Burger--><a class="vlt-menu-burger vlt-menu-burger--opened js-offcanvas-menu-close" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="round">
-					<line x1="18" y1="6" x2="6" y2="18" />
-					<line x1="6" y1="6" x2="18" y2="18" /></svg></a>
-		</div>
-		<nav class="vlt-offcanvas-menu__navigation">
-			<!--Navigation-->
-			<ul class="sf-menu">
-				<li data-menuanchor="Home"><a href="#Home">Home</a></li>
-				<li data-menuanchor="Services"><a href="#Services">Why</a></li>
-				<li data-menuanchor="Experience"><a href="#Experience">Service</a></li>
-				<li data-menuanchor="Testimonials"><a href="#Testimonials">Portfolio</a></li>
-				<li data-menuanchor="Blog"><a href="#Blog">Rate Card</a></li>
-				<li data-menuanchor="Contact"><a href="#Contact">Contact</a></li>
-			</ul>
-		</nav>
-		<div class="vlt-offcanvas-menu__footer">
-			<!--Socials-->
-			<div class="vlt-offcanvas-menu__socials"><a href="https://www.behance.net/decograph" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14h-8.027c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988h-6.466v-14.967h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zm-3.466-8.988h3.584c2.508 0 2.906-3-.312-3h-3.272v3zm3.391 3h-3.391v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"/></svg></a><a href="https://dribbble.com/decograph" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" width="24px" height="24px" ><path d="M 16 4 C 9.382813 4 4 9.382813 4 16 C 4 22.617188 9.382813 28 16 28 C 22.617188 28 28 22.617188 28 16 C 28 9.382813 22.617188 4 16 4 Z M 16 6 C 18.535156 6 20.832031 6.953125 22.59375 8.5 C 22.40625 8.761719 22.152344 9.078125 21.75 9.46875 C 20.894531 10.296875 19.527344 11.292969 17.4375 12.0625 C 16.023438 9.449219 14.636719 7.484375 13.71875 6.25 C 14.449219 6.082031 15.214844 6 16 6 Z M 11.75 6.9375 C 12.570313 8.011719 14.03125 10.003906 15.5 12.65625 C 11.433594 13.734375 7.703125 13.871094 6.21875 13.875 C 6.882813 10.785156 8.960938 8.242188 11.75 6.9375 Z M 23.96875 9.96875 C 25.1875 11.582031 25.945313 13.578125 26 15.75 C 25.109375 15.550781 23.796875 15.355469 22.09375 15.34375 C 21.207031 15.339844 20.203125 15.402344 19.125 15.53125 C 18.875 14.960938 18.605469 14.410156 18.34375 13.875 C 20.585938 13.015625 22.113281 11.882813 23.125 10.90625 C 23.46875 10.570313 23.738281 10.261719 23.96875 9.96875 Z M 16.40625 14.46875 C 16.636719 14.933594 16.871094 15.410156 17.09375 15.90625 C 12.820313 17.089844 9.75 20.714844 8.4375 22.53125 C 6.925781 20.78125 6 18.5 6 16 C 6 15.957031 6 15.917969 6 15.875 C 7.351563 15.890625 11.648438 15.796875 16.40625 14.46875 Z M 22.09375 17.3125 C 23.878906 17.3125 25.113281 17.5625 25.84375 17.75 C 25.378906 20.414063 23.875 22.699219 21.75 24.1875 C 21.351563 21.796875 20.695313 19.523438 19.90625 17.4375 C 20.695313 17.359375 21.441406 17.3125 22.09375 17.3125 Z M 17.875 17.78125 C 18.773438 20.0625 19.527344 22.566406 19.90625 25.21875 C 18.710938 25.722656 17.382813 26 16 26 C 13.707031 26 11.589844 25.230469 9.90625 23.9375 C 10.933594 22.53125 13.953125 18.789063 17.875 17.78125 Z"/></svg></a><a href="https://wa.me/6281216723270" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="19px" height="19px" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16"> <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/> </svg></a><a href="https://www.instagram.com/decographstudio/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="24px" height="24px">    <path d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"/></svg></a></div>
-			<!--Copyright-->
-			<div class="vlt-offcanvas-menu__copyright">
-				<p><b>DECOGRAPH STUDIO</b><br>Great Design, Now in Minutes</p>
-			</div>
-		</div>
-	</div>
-	<!--Site Overlay-->
-	<div class="vlt-site-overlay"></div>
-	<!--Fixed Socials-->
-	<div class="vlt-fixed-socials"><a href="https://www.behance.net/decograph" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14h-8.027c.13 3.211 3.483 3.312 4.588 2.029h3.168zm-7.686-4h4.965c-.105-1.547-1.136-2.219-2.477-2.219-1.466 0-2.277.768-2.488 2.219zm-9.574 6.988h-6.466v-14.967h6.953c5.476.081 5.58 5.444 2.72 6.906 3.461 1.26 3.577 8.061-3.207 8.061zm-3.466-8.988h3.584c2.508 0 2.906-3-.312-3h-3.272v3zm3.391 3h-3.391v3.016h3.341c3.055 0 2.868-3.016.05-3.016z"/></svg></a><a href="https://dribbble.com/decograph" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" width="24px" height="24px" ><path d="M 16 4 C 9.382813 4 4 9.382813 4 16 C 4 22.617188 9.382813 28 16 28 C 22.617188 28 28 22.617188 28 16 C 28 9.382813 22.617188 4 16 4 Z M 16 6 C 18.535156 6 20.832031 6.953125 22.59375 8.5 C 22.40625 8.761719 22.152344 9.078125 21.75 9.46875 C 20.894531 10.296875 19.527344 11.292969 17.4375 12.0625 C 16.023438 9.449219 14.636719 7.484375 13.71875 6.25 C 14.449219 6.082031 15.214844 6 16 6 Z M 11.75 6.9375 C 12.570313 8.011719 14.03125 10.003906 15.5 12.65625 C 11.433594 13.734375 7.703125 13.871094 6.21875 13.875 C 6.882813 10.785156 8.960938 8.242188 11.75 6.9375 Z M 23.96875 9.96875 C 25.1875 11.582031 25.945313 13.578125 26 15.75 C 25.109375 15.550781 23.796875 15.355469 22.09375 15.34375 C 21.207031 15.339844 20.203125 15.402344 19.125 15.53125 C 18.875 14.960938 18.605469 14.410156 18.34375 13.875 C 20.585938 13.015625 22.113281 11.882813 23.125 10.90625 C 23.46875 10.570313 23.738281 10.261719 23.96875 9.96875 Z M 16.40625 14.46875 C 16.636719 14.933594 16.871094 15.410156 17.09375 15.90625 C 12.820313 17.089844 9.75 20.714844 8.4375 22.53125 C 6.925781 20.78125 6 18.5 6 16 C 6 15.957031 6 15.917969 6 15.875 C 7.351563 15.890625 11.648438 15.796875 16.40625 14.46875 Z M 22.09375 17.3125 C 23.878906 17.3125 25.113281 17.5625 25.84375 17.75 C 25.378906 20.414063 23.875 22.699219 21.75 24.1875 C 21.351563 21.796875 20.695313 19.523438 19.90625 17.4375 C 20.695313 17.359375 21.441406 17.3125 22.09375 17.3125 Z M 17.875 17.78125 C 18.773438 20.0625 19.527344 22.566406 19.90625 25.21875 C 18.710938 25.722656 17.382813 26 16 26 C 13.707031 26 11.589844 25.230469 9.90625 23.9375 C 10.933594 22.53125 13.953125 18.789063 17.875 17.78125 Z"/></svg></a><a href="https://wa.me/6281216723270" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="19px" height="19px" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16"> <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/> </svg></a><a href="https://www.instagram.com/decographstudio/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" width="24px" height="24px">    <path d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"/></svg></a></div>
-	<!--Main-->
-	<main class="vlt-main">
-		<!--Fullpage Slider-->
-		<div class="vlt-fullpage-slider" data-loop-top="" data-loop-bottom="" data-speed="800">
-			<!--Home-->
-			<!--Section-->
-			<div class="vlt-section pp-scrollable" data-anchor="Home" data-brightness="dark" style="background-image: url(assets/img/root/red-background.jpg);">
-				<div class="vlt-section__vertical-align">
-					<div class="vlt-section__content">
-						<!--Particles-->
-						<div class="vlt-section__particles">
-							<div class="vlt-particle vlt-fade-in-left vlt-custom--1451" style="background-image: url(assets/img/root/plus-dark-pattern.png); transition-duration: 1s;"></div>
-							<div class="vlt-particle d-none d-xl-block vlt-fade-in-right vlt-custom--1512" style="background-image: url(assets/img/root/elipse-home-slide.png); transition-duration: 1.5s; transition-delay: 300ms;"></div>
-							<div class="vlt-particle vlt-custom--4124" style="background-image: url(assets/img/page1-image.png);"></div>
-						</div>
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-7 offset-lg-1">
-									<!--Animated Block-->
-									<div class="vlt-animated-block" style="animation-delay:0s; animation-duration:700ms;">
-										<h5 class="vlt-display-1 has-white-color">BERSAMA DECOGRAPH</h5>
-										<div class="vlt-gap-10"></div>
-										<h1 class="vlt-large-heading has-white-color">Bikin Usahamu
-											<br>Lebih Dikenal</h1>
-										<div class="vlt-gap-40"></div>
-										<div class="row">
-											<div class="col-auto">
-												<p class="vlt-services__text has-white-color">Kami adalah studio design grafis yang berfokus pada<br/>
-													layanan design logo dan brand identity. Ratusan proyek<br/>
-													design logo dari dalam negeri dan luar negeri telah<br/>
-													kami kerjakan. Bikin logomu di decograph dan dapatkan<br/>
-													hasil yang memuaskan.
-												</p>
-												<div class="vlt-gap-20--sm"></div>
-											</div>
-											
-										</div>
-										<div class="vlt-gap-40"></div><a class="vlt-link has-white-color" href="#">Lihat Portofolio</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--Services-->
-			<!--Section-->
-			<div class="vlt-section pp-scrollable" data-anchor="Services" data-brightness="light">
-				<div class="vlt-section__vertical-align">
-					<div class="vlt-section__content">
-						<!--Particles-->
-						<div class="vlt-section__particles">
-							<div class="vlt-particle vlt-custom--1259 vlt-fade-in-right" style="background-image: url(assets/img/root/plus-light-pattern.png); animation-delay: 750ms;"></div>
-							<div class="vlt-particle vlt-custom--2355 vlt-fade-in-left" style="background-image: url(assets/img/root/elipse-light.png); animation-delay: 500ms;"></div>
-						</div>
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-2 offset-lg-1 d-none d-lg-block">
-									<!--Animated Block-->
-									<div class="vlt-animated-block" style="animation-delay:0s; animation-duration:700ms;">
-										<!--Counter Up-->
-										<div class="vlt-counter-up" data-ending-number="4" data-animation-speed="1000" data-delimiter=""><span class="counter">0</span><sup>+</sup>
-										</div>
-										<div class="vlt-gap-40"></div>
-										<h6>Alasan<br/>
-											Memiliki<br/>
-											Logo yang<br/>
-											Menarik</h6>
-									</div>
-								</div>
-								<div class="col-lg-8 col-md-12">
-									<!--Animated Block-->
-									<div class="vlt-animated-block" style="animation-delay:100ms; animation-duration:700ms;">
-										<h4>Selain sebagai ciri khas dan pembeda dari merek 
-											yang lain, ada beberapa alasan lain kenapa logo
-											dan brand identity sangat penting bagi sebuah
-											merek</h4>
-									</div>
-									<div class="vlt-gap-70"></div>
-									<div class="row">
-										<div class="col-md-6">
-											<!--Animated Block-->
-											<div class="vlt-animated-block" style="animation-delay:200ms; animation-duration:700ms;">
-												<!--Services-->
-												<div class="vlt-services">
-													<h5 class="vlt-services__title"><a href="#">First impression yang baik</a>
-													</h5>
-													<p class="vlt-services__text">Logo adalah pengenalan pertama sebuah
-														bisnis kepada pembeli. logo dapat menjadi
-														“undangan” yang menarik untuk pembeli
-														melihat lebih lanjut tentang usahamu
-													</p>
-													<!-- <a class="vlt-services__link vlt-link-with-arrow" href="#"><span class="vlt-link-with-arrow__text">Discover more</span><span class="vlt-link-with-arrow__icon">🡒</span></a> -->
-												</div>
-											</div>
-											<div class="vlt-gap-40"></div>
-										</div>
-										<div class="col-md-6">
-											<!--Animated Block-->
-											<div class="vlt-animated-block" style="animation-delay:300ms; animation-duration:700ms;">
-												<!--Services-->
-												<div class="vlt-services">
-													<h5 class="vlt-services__title"><a href="#">Mudah bersaing</a>
-													</h5>
-													<p class="vlt-services__text">Memiliki logo dan brand identity yang efektif
-														dapat membantu bisnismu menonjol di
-														hadapan pelanggan potensial di pasar bisnismu
-													</p>
-													<!-- <a class="vlt-services__link vlt-link-with-arrow" href="#"><span class="vlt-link-with-arrow__text">Discover more</span><span class="vlt-link-with-arrow__icon">🡒</span></a> -->
-												</div>
-											</div>
-											<div class="vlt-gap-40"></div>
-										</div>
-										<div class="col-md-6">
-											<!--Animated Block-->
-											<div class="vlt-animated-block" style="animation-delay:400ms; animation-duration:700ms;">
-												<!--Services-->
-												<div class="vlt-services">
-													<h5 class="vlt-services__title"><a href="#">Mudah Diingat</a>
-													</h5>
-													<p class="vlt-services__text">Perusahaan dengan desain dan branding
-														yang buruk sulit diingat sehingga peluang
-														untuk pembeli datang lagi menjadi minim.
-														Desain logo yang kuat dapat membantu
-														menjamin bisnismu selalu diingat.
-													</p>
-													<!-- <a class="vlt-services__link vlt-link-with-arrow" href="#"><span class="vlt-link-with-arrow__text">Discover more</span><span class="vlt-link-with-arrow__icon">🡒</span></a> -->
-												</div>
-											</div>
-											<div class="vlt-gap-40--sm"></div>
-										</div>
-										<div class="col-md-6">
-											<!--Animated Block-->
-											<div class="vlt-animated-block" style="animation-delay:500ms; animation-duration:700ms;">
-												<!--Services-->
-												<div class="vlt-services">
-													<h5 class="vlt-services__title"><a href="#">Menarik Perhatian</a>
-													</h5>
-													<p class="vlt-services__text">Logo juga dapat digunakan perusahaan untuk
-														menonjolkan keunikannya. Kadang seorang
-														konsumen berminat suatu produk karena
-														melihat logo yang menarik.
-													</p>
-													<!-- <a class="vlt-services__link vlt-link-with-arrow" href="#"><span class="vlt-link-with-arrow__text">Discover more</span><span class="vlt-link-with-arrow__icon">🡒</span></a> -->
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--Experience-->
-			<!--Section-->
-			<div class="vlt-section pp-scrollable" data-anchor="Experience" data-brightness="dark">
-				<div class="vlt-section__vertical-align">
-					<div class="vlt-section__content">
-						<!--Ken Burn Effect-->
-						<div class="vlt-section__ken-burn-background"><img src="assets/img/attachment-02.jpg" alt=""></div>
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-10 offset-lg-1">
-									<!--Animated Block-->
-									<div class="vlt-animated-block" style="animation-delay:0s; animation-duration:700ms;">
-										<div class="d-block d-md-flex align-items-center justify-content-between">
-											<h4 class="has-white-color">Bikin <span class="has-first-color">Logo</span> dan Brand Identity di Decograph</h4>
-											<div class="vlt-gap-30--sm"></div>
-											<div class="vlt-timeline-slider-controls"><span class="prev">🡐</span><span class="pagination"></span><span class="next">🡒</span></div>
-										</div>
-									</div>
-									<div class="vlt-gap-50"></div>
-									<!--Animated Block-->
-									<div class="vlt-animated-block" style="animation-delay:100ms; animation-duration:700ms;">
-										<!--Timeline Slider-->
-										<div class="vlt-timeline-slider">
-											<div class="swiper-container">
-												<div class="swiper-wrapper">
-													<div>
-														<!--Timeline Slider Item-->
-														<div class="vlt-timeline-item">
-															<div class="row">
-																<div class="col-sm-12 col-md-3"><span class="vlt-timeline-item__year">01</span>
-																</div>
-																<div class="col-sm-12 col-md-3">
-																	<h5 class="vlt-timeline-item__title">Prosedurnya
-																		Gampang.</h5>
-																</div>
-																<div class="col-sm-12 col-md-5 offset-md-1">
-																	<p class="vlt-timeline-item__text">Prosedur pemesanan logo di decograph
-																		sangatlah mudah sehingga kamu akan
-																		segera mendapatkan logo terbaik dari kami.
-																		</p>
-																</div>
-															</div>
-														</div>
-														<!--Timeline Slider Item-->
-														<div class="vlt-timeline-item">
-															<div class="row">
-																<div class="col-sm-12 col-md-3"><span class="vlt-timeline-item__year">02</span>
-																</div>
-																<div class="col-sm-12 col-md-3">
-																	<h5 class="vlt-timeline-item__title">Design
-																		Berkualitas.</h5>
-																</div>
-																<div class="col-sm-12 col-md-5 offset-md-1">
-																	<p class="vlt-timeline-item__text">Design logo yang dihasilkan berkualitas , unik
-																		dan yang pasti berbeda dengan kompetitormu.</p>
-																</div>
-															</div>
-														</div>
-														<!--Timeline Slider Item-->
-														<div class="vlt-timeline-item">
-															<div class="row">
-																<div class="col-sm-12 col-md-3"><span class="vlt-timeline-item__year">03</span>
-																</div>
-																<div class="col-sm-12 col-md-3">
-																	<h5 class="vlt-timeline-item__title">Berpengalaman
-																		lebih dari 6 tahun.</h5>
-																</div>
-																<div class="col-sm-12 col-md-5 offset-md-1">
-																	<p class="vlt-timeline-item__text">Design logo dikerjakan oleh designer
-																		berpengalaman yang telah menjuarai kontes
-																		Internasional dan berpengalaman lebih dari
-																		6 tahun</p>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div>
-														<!--Timeline Slider Item-->
-														<div class="vlt-timeline-item">
-															<div class="row">
-																<div class="col-sm-12 col-md-3"><span class="vlt-timeline-item__year">04</span>
-																</div>
-																<div class="col-sm-12 col-md-3">
-																	<h5 class="vlt-timeline-item__title">Design Berdasarkan
-																		Riset Pasar.</h5>
-																</div>
-																<div class="col-sm-12 col-md-5 offset-md-1">
-																	<p class="vlt-timeline-item__text">Design logo dikerjakan berdasarkan
-																		riset pasar dan disesuaikan dengan
-																		Target Pasar bisnismu.</p>
-																</div>
-															</div>
-														</div>
-														<!--Timeline Slider Item-->
-														<div class="vlt-timeline-item">
-															<div class="row">
-																<div class="col-sm-12 col-md-3"><span class="vlt-timeline-item__year">05</span>
-																</div>
-																<div class="col-sm-12 col-md-3">
-																	<h5 class="vlt-timeline-item__title">Bergaransi.</h5>
-																</div>
-																<div class="col-sm-12 col-md-5 offset-md-1">
-																	<p class="vlt-timeline-item__text">Jika design tidak memenuhi ekspektasi,
-																		project dapat direfund dan uang kembali
-																		100%</p>
-																</div>
-															</div>
-														</div>
-														<!--Timeline Slider Item-->
-														<div class="vlt-timeline-item">
-															<div class="row">
-																<div class="col-sm-12 col-md-3"><span class="vlt-timeline-item__year">06</span>
-																</div>
-																<div class="col-sm-12 col-md-3">
-																	<h5 class="vlt-timeline-item__title">Harga Bersahabat.</h5>
-																</div>
-																<div class="col-sm-12 col-md-5 offset-md-1">
-																	<p class="vlt-timeline-item__text">Kamu akan mendapatkan logo yang 
-																		berkualitas dengan harga yang
-																		bersahabat dan terjangkau.</p>
-																</div>
-															</div>
-														</div>
-													</div>
-												
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="vlt-gap-50"></div>
-									<!--Animated Block-->
-									<div class="vlt-animated-block" style="animation-delay:200ms; animation-duration:700ms;">
-										<!--Button--><a class="vlt-btn vlt-btn--primary" href="https://wa.me/6281216723270" target="_blank"><span class="vlt-btn__text">Order Sekarang</span><span class="vlt-btn__icon vlt-btn__icon--right"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16"> <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/> </svg></span></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--Testimonials-->
-			<!--Section-->
-			<div class="vlt-section pp-scrollable" data-anchor="Testimonials" data-brightness="dark">
-				<div class="vlt-section__vertical-align">
-					<div class="vlt-section__content">
-						<!--Ken Burn Effect-->
-						<div class="vlt-section__ken-burn-background" style="background-color: black;"><img src="assets/img/corak-darkbg.png" alt=""></div>
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-10 offset-lg-1">
-									<!--Animated Block-->
-									<div class="vlt-animated-block" style="animation-delay:0s; animation-duration:700ms;">
-										<div class="d-block d-md-flex align-items-center justify-content-between">
-											<h1 class="has-white-color">Portfolio</h1>
-											<div class="vlt-gap-30--sm"></div>
-											<div class="vlt-testimonial-slider-controls"><span class="prev">🡐</span><span class="pagination"></span><span class="next">🡒</span></div>
-										</div>
-									</div>
-									<div class="vlt-gap-50"></div>
-									<!--Animated Block-->
-									<div class="vlt-animated-block" style="animation-delay:100ms; animation-duration:700ms;">
-										<!--Testimonial Slider-->
-										<div class="vlt-testimonial-slider">
-											<div class="swiper-container">
-												<div class="swiper-wrapper">
-													<!--Testimonial Item-->
-													<div class="vlt-testimonial-item">
-														<img src="assets/img//portfolio-slide1.png" alt="portfolio"/>
-													</div>
-													<!--Testimonial Item-->
-													<div class="vlt-testimonial-item">
-														<img src="assets/img//portfolio-slide2.png" alt="portfolio"/>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="vlt-gap-50"></div>
-									<div class="row justify-content-md-between" style="margin: 0px 64px 0px 32px;">
-										<div class="col-md-auto col-sm-4" >
-											<h6 class="has-white-color">Lihat Portofolio lainnya di</h6></div>
-											<div class="vlt-gap-40--sm"></div>
-										<div class="col-md-auto col-sm-4">
-											<!--Animated Block-->
-									<div class="vlt-animated-block" style="animation-delay:200ms; animation-duration:700ms;">
-										<!--Button--><a class="vlt-btn vlt-btn--primary" style="padding-right:42px; padding-left: 42px;" href="https://www.instagram.com/decographstudio/" target="_blank"><span class="vlt-btn__text">Instagram</span></a>
-									</div>
-											<div class="vlt-gap-40--sm"></div>
-										</div>
-										<div class="col-md-auto col-sm-4">
-											<!--Animated Block-->
-									<div class="vlt-animated-block" style="animation-delay:200ms; animation-duration:700ms;">
-										<!--Button--><a class="vlt-btn vlt-btn--primary" style="padding-right:42px; padding-left: 42px;" href="https://www.behance.net/decograph" target="_blank"><span class="vlt-btn__text">Behance</span></a>
-									</div>
-											<div class="vlt-gap-40--sm"></div>
-										</div>
-										<div class="col-md-auto col-sm-4">
-											<!--Animated Block-->
-									<div class="vlt-animated-block" style="animation-delay:200ms; animation-duration:700ms;">
-										<!--Button--><a class="vlt-btn vlt-btn--primary" style="padding-right:42px; padding-left: 42px;" href="https://dribbble.com/decograph" target="_blank"><span class="vlt-btn__text">Dribbble</span></a>
-									</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--Blog-->
-			<!--Section-->
-			<div class="vlt-section pp-scrollable" data-anchor="Blog" data-brightness="dark">
-				<!--Ken Burn Effect-->
-				<div class="vlt-section__ken-burn-background" style="background-color: black;"><img src="assets/img/corak-darkbg.png" alt=""></div>
-						
-				<div class="vlt-section__vertical-align">
-					<div class="vlt-section__content">
-						<!--Particles-->
-						<div class="vlt-section__particles">
-							<div class="vlt-particle vlt-custom--1259 vlt-fade-in-right" style="background-image: url(assets/img/root/plus-light-pattern.png); animation-delay: 750ms;"></div>
-							<div class="vlt-particle vlt-custom--2355 vlt-fade-in-left" style="background-image: url(assets/img/root/elipse-light.png); animation-delay: 500ms;"></div>
-						</div>
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-10 offset-lg-1">
-									<!--Animated Block-->
-									<div class="vlt-animated-block" style="animation-delay:0s; animation-duration:700ms;">
-										<div class="d-block d-md-flex align-items-center justify-content-between">
-											<h1 class="has-white-color">Rate Card</h1>
-											<div class="vlt-gap-30--sm"></div>
-										</div>
-									</div>
-									<div class="vlt-gap-50"></div>
-									<div class="row">
-										<div class="col-md-3" >
-											<!--Animated Block-->
-											<div class="vlt-animated-block" style="animation-delay:100ms; animation-duration:700ms;">
-												<!--Blog Post-->
-												<div class="vlt-testimonial-item" style="background-color: #1F1F1F;">
-													<article class="vlt-post">
-														<div class="containerRateCard"><img src="assets/img/title-rate.png" alt=""><h5 class="has-white-color centeredRateCard" >Regular</h5>
-														</div>
-														<div class="vlt-post-content">
-															<header class="vlt-post-header" style="padding: 10% 5% 0% 8%">
-																<div class="vlt-post-meta" style="line-height: normal;"><small class="has-white-color">Paket Regular ditujukan untuk <br/>
-																	UMKM atau OLSHOP
-																	yang baru <br/> memulai berbisnis
-																	dengan<br/> harga terjangkau.</small>
-																</div>
-															</header>
-															<body>
-																<ul class="rentCard" style="font-size:smaller">
-																	<li>
-																		1 Opsi Logo
-																	</li>
-																	<li>
-																		1-3 hari pengerjaan
-																	</li>
-																	<li>2 Preview Mockup</li>
-																	<li>Revisi maks 5x</li>
-																	<li>File yang didapat :<br/><small>
-																		JPG, PNG, Master File</small></li>
-																	<li style="visibility: hidden;"></li>
-																	<li style="visibility: hidden;"></li>
-																	<li style="visibility: hidden;"></li>
-																</ul>
-															</body>
-															<footer class="vlt-post-footer">
-																<div class="vlt-testimonial-item" style="background-color: #3A3A3A; justify-content: center; padding: 16px 0px;"><h2 class="has-white-color">595<sup> rb</sup></h2></div></footer>
-														</div>
-													</article>
-												</div>
-												
-											</div>
-											<div class="vlt-gap-40--sm"></div>
-										</div>
-										<div class="col-md-3">
-											<!--Animated Block-->
-											<div class="vlt-animated-block" style="animation-delay:100ms; animation-duration:700ms;">
-												<!--Blog Post-->
-												<div class="vlt-testimonial-item" style="background-color: #1F1F1F;">
-												<article class="vlt-post">
-													<div class="containerRateCard"><img src="assets/img/title-rate.png" alt=""><h5 class="has-white-color centeredRateCard" >Starter</h5>
-													</div>
-													<div class="vlt-post-content">
-														<header class="vlt-post-header" style="padding: 10% 7% 0% 8%">
-															<div class="vlt-post-meta" style="line-height: normal;"><small class="has-white-color">Paket Starter ditujukan untuk <br/>
-																UMKM
-																yang baru memulai <br/> berbisnis 
-																dengan
-																tambahan <br/> bonus spesial</small>
-															</div>
-															
-														</header>
-														<body>
-															<ul class="rentCard" style="font-size:smaller">
-																<li>
-																	2 Opsi Logo
-																</li>
-																<li>
-																	4-6 hari pengerjaan
-																</li>
-																<li>Preview menarik</li>
-																<li>Revisi maks 5x</li>
-																<li>File yang didapat :<br/><small>
-																	JPG, PNG, Master File</small></li>
-																<li style="color: yellow;">Filosofi Logo</li>
-																<li style="color: yellow;">Bonus Design
-																		Packaging</li>
-																		<li style="visibility: hidden;"></li>
-															</ul>
-														</body>
-														<footer class="vlt-post-footer">
-															<div class="vlt-testimonial-item" style="background-color: #3A3A3A; justify-content: center; padding: 16px 0px;"><h2 class="has-white-color">1,295<sup> jt</sup></h2></div></footer>
-													</div>
-												</article></div>
-											</div>
-											<div class="vlt-gap-40--sm"></div>
-										</div>
-										<div class="col-md-3">
-											<!--Animated Block-->
-											<div class="vlt-animated-block" style="animation-delay:300ms; animation-duration:700ms;">
-												<!--Blog Post-->
-												<div class="vlt-testimonial-item" style="background-color: #1F1F1F;">
-												<article class="vlt-post">
-													<div class="containerRateCard"><img src="assets/img/title-rate.png" alt=""><h5 class="has-white-color centeredRateCard" >Premium</h5>
-													</div>
-													<div class="vlt-post-content">
-														<header class="vlt-post-header" style="padding: 10% 3% 0% 5%">
-															<div class="vlt-post-meta" style="line-height: normal;"><small class="has-white-color">Paket Premium direkomendasikan <br/>
-																untuk perusahaan yang baru 
-																berdiri
-																dengan harga terjangkau
-																dan <br/>alternatif logo yang banyak.</small>
-															</div>
-														</header>
-														<body>
-															<ul class="rentCard" style="font-size:smaller">
-																<li>
-																	4 Opsi Logo
-																</li>
-																<li>
-																	4-6 hari pengerjaan
-																</li>
-																<li>Preview menarik</li>
-																<li>Revisi maks 5x</li>
-																<li>File yang didapat :<br/><small>
-																	JPG, PNG, Master File</small></li>
-																<li style="color: yellow;">Filosofi Logo</li>
-																<li style="color: yellow;">Bonus Design
-																		Stationery</li>
-																<li style="color: yellow;">Brandbook Simple</li>
-															</ul>
-														</body>
-														<footer class="vlt-post-footer">
-															<div class="vlt-testimonial-item" style="background-color: #3A3A3A; justify-content: center; padding: 16px 0px;"><h2 class="has-white-color">1,895<sup> jt</sup></h2></div></footer>
-													</div>
-												</article></div>
-											</div>
-											<div class="vlt-gap-40--sm"></div>
-										</div>
-										<div class="col-md-3">
-											<!--Animated Block-->
-											<div class="vlt-animated-block" style="animation-delay:300ms; animation-duration:700ms;">
-												<!--Blog Post-->
-												<div class="vlt-testimonial-item" style="background-color: #1F1F1F;">
-												<div class="vlt-post">
-													<div class="containerRateCard"><img src="assets/img/title-rate.png" alt=""><h5 class="has-white-color centeredRateCard" >Platinum</h5>
-													</div>
-													<div class="vlt-post-content">
-														<header class="vlt-post-header" style="padding: 10% 0% 0% 8%">
-															<div class="vlt-post-meta" style="line-height: normal;"><small class="has-white-color">Paket Platinum direkomendasikan <br/>
-																untuk perusahaan yang ingin
-																me-rebranding bisnisnya secara <br/>
-																maksimal dengan harga lebih hemat</small>
-															</div>
-														</header>
-														<body>
-															<ul class="rentCard" style="font-size:smaller">
-																<li>
-																	6 Opsi Logo
-																</li>
-																<li>
-																	6-8 hari pengerjaan
-																</li>
-																<li>Preview menarik</li>
-																<li >Revisi Unlimited</li>
-																<li>File yang didapat :<br/><small>
-																	JPG, PNG, Master File</small></li>
-																	<li style="color: yellow;">Filosofi Logo</li>
-																	<li style="color: yellow;">Bonus Design
-																		Stationery</li>
-																	<li style="color: yellow;">Brandbook Lengkap</li>
-																	<div></div>
-															</ul>
-														</body>
-														<footer class="vlt-post-footer">
-															<div class="vlt-testimonial-item" style="background-color: #3A3A3A; justify-content: center; padding: 16px 0px;"><h2 class="has-white-color">2,545 <sup>jt</sup></h2></div></footer>
-													</div>
-												</div></div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--Contact-->
-			<!--Section-->
-			<div class="vlt-section pp-scrollable" data-anchor="Contact" data-brightness="dark">
-				<div class="vlt-section__vertical-align">
-					<div class="vlt-section__content">
-						<!--Ken Burn Effect-->
-						<div class="vlt-section__ken-burn-background" style="background-color: black;"><img src="assets/img/corak-darkbg.png" alt=""></div>
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-4 offset-lg-1">
-									<!--Animated Block-->
-									<div class="vlt-animated-block" style="animation-delay:0s; animation-duration:700ms;">
-										<h1 class="has-white-color">Contact</h1>
-										<div class="vlt-gap-20"></div>
-										<p class="has-gray-color">Percayakan visual identity brandmu
-											di decograph</p>
-										<div class="vlt-gap-50"></div>
-										<div class="has-white-color">
-											<h6 class="vlt-display-1 has-white-color">WHATSAPP :</h6>
-											<div class="vlt-gap-5 "></div><a href="https://wa.me/6281216723270" class="has-gray-color">+62 812 1672 3270</a>
-										</div>
-										<div class="vlt-gap-30"></div>
-										<div class="has-white-color">
-											<h6 class="vlt-display-1 has-white-color">INSTAGRAM :</h6>
-											<div class="vlt-gap-5"></div><a href="https://www.instagram.com/decographstudio/" class="has-gray-color">@decograph_std<br/>
-												@decographstudio</a>
-										</div>
-										<div class="vlt-gap-30"></div>
-										<div class="has-white-color">
-											<h6 class="vlt-display-1 has-white-color">EMAIL :</h6>
-											<div class="vlt-gap-5"></div><a href="mailto:hellodecograph@gmail.com" class="has-gray-color">hellodecograph@gmail.com</a>
-										</div>
-									
-									</div>
-									<div class="vlt-gap-70--sm"></div>
-								</div>
-								<div class="col-lg-6">
-									<!--Animated Block-->
-									<div class="vlt-animated-block" style="animation-delay:100ms; animation-duration:700ms;">
-										<h5 class="has-white-color">
-											Sejak 2017, kami telah mengerjakan 
-											Ratusan Logo UMKM dan Startup dari
-											berbagai wilayah di Indonesia dan
-											Mancanegara.</h5>
-										<div class="vlt-gap-40"></div>
-										<div class="vlt-animated-block" style="animation-delay:100ms; animation-duration:700ms;">
-											<img src="assets/img/profile.png" alt="sang desainer"/>
-											<div class="vlt-gap-40"></div>
-											<!--Button-->
-											<!-- <button class="vlt-btn vlt-btn--primary"><span class="vlt-btn__text">Contact Me</span><span class="vlt-btn__icon vlt-btn__icon--right"></span></button> -->
-										<!--Animated Block-->
-									<div class="vlt-animated-block" style="animation-delay:200ms; animation-duration:700ms;">
-										<!--Button--><a class="vlt-btn vlt-btn--primary" href="https://wa.me/6281216723270" target="_blank"><span class="vlt-btn__text">Order Sekarang</span><span class="vlt-btn__icon vlt-btn__icon--right"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16"> <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/> </svg></span></a>
-									</div>
-								</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--Progress Bar-->
-			<ul class="vlt-fullpage-slider-progress-bar">
-				<li data-menuanchor="Home"></li>
-				<li data-menuanchor="Services"></li>
-				<li data-menuanchor="Experience"></li>
-				<li data-menuanchor="Testimonials"></li>
-				<li data-menuanchor="Blog"></li>
-				<li data-menuanchor="Contact"></li>
-			</ul>
-			<!--Numbers-->
-			<div class="vlt-fullpage-slider-numbers"></div>
-		</div>
-		<!--Footer-->
-		<footer class="vlt-footer vlt-footer--fixed">
-			<!--Copyright-->
-			<div class="vlt-footer-copyright">
-				<p><b>DECOGRAPH STUDIO</b><br>Great Design, Now in Minutes</p>
-			</div>
-		</footer>
-	</main>
-	<!--Libs-->
-	<script src="assets/vendors/jquery-3.5.1.min.js"></script>
-	<script src="assets/scripts/vlt-plugins.min.js"></script>
-	<script src="assets/scripts/vlt-helpers.js"></script>
-	<script src="assets/scripts/vlt-controllers.min.js"></script>
-</body>
-
+          <div class="vlt-section__vertical-align">
+            <div class="vlt-section__content">
+              <!--Particles-->
+              <div class="vlt-section__particles">
+                <div
+                  class="vlt-particle vlt-custom--1259 vlt-fade-in-right"
+                  style="
+                    background-image: url(assets/img/root/plus-light-pattern.png);
+                    animation-delay: 750ms;
+                  "
+                ></div>
+                <div
+                  class="vlt-particle vlt-custom--2355 vlt-fade-in-left"
+                  style="
+                    background-image: url(assets/img/root/elipse-light.png);
+                    animation-delay: 500ms;
+                  "
+                ></div>
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-10 offset-lg-1">
+                    <!--Animated Block-->
+                    <div
+                      class="vlt-animated-block"
+                      style="animation-delay: 0s; animation-duration: 700ms"
+                    >
+                      <div
+                        class="d-block d-md-flex align-items-center justify-content-between"
+                      >
+                        <h1 class="has-white-color">Rate Card</h1>
+                        <div class="vlt-gap-30--sm"></div>
+                      </div>
+                    </div>
+                    <div class="vlt-gap-50"></div>
+                    <div class="row">
+                      <div class="col-md-3">
+                        <!--Animated Block-->
+                        <div
+                          class="vlt-animated-block"
+                          style="
+                            animation-delay: 300ms;
+                            animation-duration: 700ms;
+                          "
+                        >
+                          <!--Blog Post-->
+                          <div
+                            class="vlt-testimonial-item"
+                            style="background-color: #1f1f1f"
+                          >
+                            <article class="vlt-post" style="width: 100%">
+                              <div class="containerRateCard">
+                                <img src="assets/img/title-rate.png" alt="" />
+                                <h5 class="has-white-color centeredRateCard">
+                                  Regular
+                                </h5>
+                              </div>
+                              <div class="vlt-post-content">
+                                <header
+                                  class="vlt-post-header"
+                                  style="padding: 10% 3% 0% 5%"
+                                >
+                                  <div
+                                    class="vlt-post-meta"
+                                    style="line-height: normal"
+                                  >
+                                    <small class="has-white-color"
+                                      >Paket Regular ditujukan untuk <br />
+                                      UMKM atau OLSHOP yang baru <br />
+                                      memulai berbisnis dengan<br />
+                                      harga terjangkau.</small
+                                    >
+                                  </div>
+                                </header>
+                                <body>
+                                  <ul
+                                    class="rentCard"
+                                    style="font-size: smaller"
+                                  >
+                                    <li>1 Opsi Logo</li>
+                                    <li>1-3 hari pengerjaan</li>
+                                    <li>2 Preview Mockup</li>
+                                    <li>Revisi maks 5x</li>
+                                    <li>
+                                      File yang didapat :<br /><small>
+                                        JPG, PNG, Master File</small
+                                      >
+                                    </li>
+                                    <li style="visibility: hidden"></li>
+                                    <li style="visibility: hidden"></li>
+                                    <li style="visibility: hidden"></li>
+                                  </ul>
+                                </body>
+                                <footer class="vlt-post-footer">
+                                  <div
+                                    class="vlt-testimonial-item"
+                                    style="
+                                      background-color: #3a3a3a;
+                                      justify-content: center;
+                                      padding: 16px 0px;
+                                    "
+                                  >
+                                    <h2 class="has-white-color">
+                                      595<sup> rb</sup>
+                                    </h2>
+                                  </div>
+                                </footer>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                        <div class="vlt-gap-40--sm"></div>
+                      </div>
+                      <div class="col-md-3">
+                        <!--Animated Block-->
+                        <div
+                          class="vlt-animated-block"
+                          style="
+                            animation-delay: 100ms;
+                            animation-duration: 700ms;
+                          "
+                        >
+                          <!--Blog Post-->
+                          <div
+                            class="vlt-testimonial-item"
+                            style="background-color: #1f1f1f"
+                          >
+                            <article class="vlt-post" style="width: 100%">
+                              <div class="containerRateCard">
+                                <img src="assets/img/title-rate.png" alt="" />
+                                <h5 class="has-white-color centeredRateCard">
+                                  Starter
+                                </h5>
+                              </div>
+                              <div class="vlt-post-content">
+                                <header
+                                  class="vlt-post-header"
+                                  style="padding: 10% 7% 0% 8%"
+                                >
+                                  <div
+                                    class="vlt-post-meta"
+                                    style="line-height: normal"
+                                  >
+                                    <small class="has-white-color"
+                                      >Paket Starter ditujukan untuk <br />
+                                      UMKM yang baru memulai <br />
+                                      berbisnis dengan tambahan <br />
+                                      bonus spesial</small
+                                    >
+                                  </div>
+                                </header>
+                                <body>
+                                  <ul
+                                    class="rentCard"
+                                    style="font-size: smaller"
+                                  >
+                                    <li>2 Opsi Logo</li>
+                                    <li>4-6 hari pengerjaan</li>
+                                    <li>Preview menarik</li>
+                                    <li>Revisi maks 5x</li>
+                                    <li>
+                                      File yang didapat :<br /><small>
+                                        JPG, PNG, Master File</small
+                                      >
+                                    </li>
+                                    <li style="color: yellow">Filosofi Logo</li>
+                                    <li style="color: yellow">
+                                      Bonus Design Packaging
+                                    </li>
+                                    <li style="visibility: hidden"></li>
+                                  </ul>
+                                </body>
+                                <footer class="vlt-post-footer">
+                                  <div
+                                    class="vlt-testimonial-item"
+                                    style="
+                                      background-color: #3a3a3a;
+                                      justify-content: center;
+                                      padding: 16px 0px;
+                                    "
+                                  >
+                                    <h2 class="has-white-color">
+                                      1,295<sup> jt</sup>
+                                    </h2>
+                                  </div>
+                                </footer>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                        <div class="vlt-gap-40--sm"></div>
+                      </div>
+                      <div class="col-md-3">
+                        <!--Animated Block-->
+                        <div
+                          class="vlt-animated-block"
+                          style="
+                            animation-delay: 300ms;
+                            animation-duration: 700ms;
+                          "
+                        >
+                          <!--Blog Post-->
+                          <div
+                            class="vlt-testimonial-item"
+                            style="background-color: #1f1f1f"
+                          >
+                            <article class="vlt-post" style="width: 100%">
+                              <div class="containerRateCard">
+                                <img src="assets/img/title-rate.png" alt="" />
+                                <h5 class="has-white-color centeredRateCard">
+                                  Premium
+                                </h5>
+                              </div>
+                              <div class="vlt-post-content">
+                                <header
+                                  class="vlt-post-header"
+                                  style="padding: 10% 3% 0% 5%"
+                                >
+                                  <div
+                                    class="vlt-post-meta"
+                                    style="line-height: normal"
+                                  >
+                                    <small class="has-white-color"
+                                      >Paket Premium direkomendasikan <br />
+                                      untuk perusahaan yang baru berdiri dengan
+                                      harga terjangkau dan <br />alternatif logo
+                                      yang banyak.</small
+                                    >
+                                  </div>
+                                </header>
+                                <body>
+                                  <ul
+                                    class="rentCard"
+                                    style="font-size: smaller"
+                                  >
+                                    <li>4 Opsi Logo</li>
+                                    <li>4-6 hari pengerjaan</li>
+                                    <li>Preview menarik</li>
+                                    <li>Revisi maks 5x</li>
+                                    <li>
+                                      File yang didapat :<br /><small>
+                                        JPG, PNG, Master File</small
+                                      >
+                                    </li>
+                                    <li style="color: yellow">Filosofi Logo</li>
+                                    <li style="color: yellow">
+                                      Bonus Design Stationery
+                                    </li>
+                                    <li style="color: yellow">
+                                      Brandbook Simple
+                                    </li>
+                                  </ul>
+                                </body>
+                                <footer class="vlt-post-footer">
+                                  <div
+                                    class="vlt-testimonial-item"
+                                    style="
+                                      background-color: #3a3a3a;
+                                      justify-content: center;
+                                      padding: 16px 0px;
+                                    "
+                                  >
+                                    <h2 class="has-white-color">
+                                      1,895<sup> jt</sup>
+                                    </h2>
+                                  </div>
+                                </footer>
+                              </div>
+                            </article>
+                          </div>
+                        </div>
+                        <div class="vlt-gap-40--sm"></div>
+                      </div>
+                      <div class="col-md-3">
+                        <!--Animated Block-->
+                        <div
+                          class="vlt-animated-block"
+                          style="
+                            animation-delay: 300ms;
+                            animation-duration: 700ms;
+                          "
+                        >
+                          <!--Blog Post-->
+                          <div
+                            class="vlt-testimonial-item"
+                            style="background-color: #1f1f1f"
+                          >
+                            <div class="vlt-post" style="width: 100%">
+                              <div class="containerRateCard">
+                                <img src="assets/img/title-rate.png" alt="" />
+                                <h5 class="has-white-color centeredRateCard">
+                                  Platinum
+                                </h5>
+                              </div>
+                              <div class="vlt-post-content">
+                                <header
+                                  class="vlt-post-header"
+                                  style="padding: 10% 0% 0% 8%"
+                                >
+                                  <div
+                                    class="vlt-post-meta"
+                                    style="line-height: normal"
+                                  >
+                                    <small class="has-white-color"
+                                      >Paket Platinum direkomendasikan <br />
+                                      untuk perusahaan yang ingin me-rebranding
+                                      bisnisnya secara <br />
+                                      maksimal dengan harga lebih hemat</small
+                                    >
+                                  </div>
+                                </header>
+                                <body>
+                                  <ul
+                                    class="rentCard"
+                                    style="font-size: smaller"
+                                  >
+                                    <li>6 Opsi Logo</li>
+                                    <li>6-8 hari pengerjaan</li>
+                                    <li>Preview menarik</li>
+                                    <li>Revisi Unlimited</li>
+                                    <li>
+                                      File yang didapat :<br /><small>
+                                        JPG, PNG, Master File</small
+                                      >
+                                    </li>
+                                    <li style="color: yellow">Filosofi Logo</li>
+                                    <li style="color: yellow">
+                                      Bonus Design Stationery
+                                    </li>
+                                    <li style="color: yellow">
+                                      Brandbook Lengkap
+                                    </li>
+                                    <div></div>
+                                  </ul>
+                                </body>
+                                <footer class="vlt-post-footer">
+                                  <div
+                                    class="vlt-testimonial-item"
+                                    style="
+                                      background-color: #3a3a3a;
+                                      justify-content: center;
+                                      padding: 16px 0px;
+                                    "
+                                  >
+                                    <h2 class="has-white-color">
+                                      2,545 <sup>jt</sup>
+                                    </h2>
+                                  </div>
+                                </footer>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Contact-->
+        <!--Section-->
+        <div
+          class="vlt-section pp-scrollable"
+          data-anchor="Contact"
+          data-brightness="dark"
+        >
+          <div class="vlt-section__vertical-align">
+            <div class="vlt-section__content">
+              <!--Ken Burn Effect-->
+              <div
+                class="vlt-section__ken-burn-background"
+                style="background-color: black"
+              >
+                <img src="assets/img/corak-darkbg.png" alt="" />
+              </div>
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-4 offset-lg-1">
+                    <!--Animated Block-->
+                    <div
+                      class="vlt-animated-block"
+                      style="animation-delay: 0s; animation-duration: 700ms"
+                    >
+                      <h1 class="has-white-color">Contact</h1>
+                      <div class="vlt-gap-20"></div>
+                      <p class="has-gray-color">
+                        Percayakan visual identity brandmu di decograph
+                      </p>
+                      <div class="vlt-gap-50"></div>
+                      <div class="has-white-color">
+                        <h6 class="vlt-display-1 has-white-color">
+                          WHATSAPP :
+                        </h6>
+                        <div class="vlt-gap-5"></div>
+                        <a
+                          href="https://wa.me/6281216723270"
+                          class="has-gray-color"
+                          >+62 812 1672 3270</a
+                        >
+                      </div>
+                      <div class="vlt-gap-30"></div>
+                      <div class="has-white-color">
+                        <h6 class="vlt-display-1 has-white-color">
+                          INSTAGRAM :
+                        </h6>
+                        <div class="vlt-gap-5"></div>
+                        <a
+                          href="https://www.instagram.com/decographstudio/"
+                          class="has-gray-color"
+                          >@decograph_std<br />
+                          @decographstudio</a
+                        >
+                      </div>
+                      <div class="vlt-gap-30"></div>
+                      <div class="has-white-color">
+                        <h6 class="vlt-display-1 has-white-color">EMAIL :</h6>
+                        <div class="vlt-gap-5"></div>
+                        <a
+                          href="mailto:hellodecograph@gmail.com"
+                          class="has-gray-color"
+                          >hellodecograph@gmail.com</a
+                        >
+                      </div>
+                    </div>
+                    <div class="vlt-gap-70--sm"></div>
+                  </div>
+                  <div class="col-lg-6">
+                    <!--Animated Block-->
+                    <div
+                      class="vlt-animated-block"
+                      style="animation-delay: 100ms; animation-duration: 700ms"
+                    >
+                      <h5 class="has-white-color">
+                        Sejak 2017, kami telah mengerjakan Ratusan Logo UMKM dan
+                        Startup dari berbagai wilayah di Indonesia dan
+                        Mancanegara.
+                      </h5>
+                      <div class="vlt-gap-40"></div>
+                      <div
+                        class="vlt-animated-block"
+                        style="
+                          animation-delay: 100ms;
+                          animation-duration: 700ms;
+                        "
+                      >
+                        <img src="assets/img/profile.png" alt="sang desainer" />
+                        <div class="vlt-gap-40"></div>
+                        <!--Button-->
+                        <!-- <button class="vlt-btn vlt-btn--primary"><span class="vlt-btn__text">Contact Me</span><span class="vlt-btn__icon vlt-btn__icon--right"></span></button> -->
+                        <!--Animated Block-->
+                        <div
+                          class="vlt-animated-block"
+                          style="
+                            animation-delay: 200ms;
+                            animation-duration: 700ms;
+                          "
+                        >
+                          <!--Button--><a
+                            class="vlt-btn vlt-btn--primary"
+                            href="https://wa.me/6281216723270"
+                            target="_blank"
+                            ><span class="vlt-btn__text">Order Sekarang</span
+                            ><span class="vlt-btn__icon vlt-btn__icon--right"
+                              ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-whatsapp"
+                                viewBox="0 0 16 16"
+                              >
+                                <path
+                                  d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+                                /></svg></span
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Progress Bar-->
+        <ul class="vlt-fullpage-slider-progress-bar">
+          <li data-menuanchor="Home"></li>
+          <li data-menuanchor="Services"></li>
+          <li data-menuanchor="Experience"></li>
+          <li data-menuanchor="Testimonials"></li>
+          <li data-menuanchor="Blog"></li>
+          <li data-menuanchor="Contact"></li>
+        </ul>
+        <!--Numbers-->
+        <div class="vlt-fullpage-slider-numbers"></div>
+      </div>
+      <!--Footer-->
+      <footer class="vlt-footer vlt-footer--fixed">
+        <!--Copyright-->
+        <div class="vlt-footer-copyright">
+          <p><b>DECOGRAPH STUDIO</b><br />Great Design, Now in Minutes</p>
+        </div>
+      </footer>
+    </main>
+    <!--Libs-->
+    <script src="assets/vendors/jquery-3.5.1.min.js"></script>
+    <script src="assets/scripts/vlt-plugins.min.js"></script>
+    <script src="assets/scripts/vlt-helpers.js"></script>
+    <script src="assets/scripts/vlt-controllers.min.js"></script>
+  </body>
 </html>

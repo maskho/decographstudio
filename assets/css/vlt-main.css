@@ -933,6 +933,13 @@ select:focus::-webkit-input-placeholder
     }
 }
 
+@media only screen and (min-width: 1200px)
+{
+    .containerPortfolio
+    {
+        max-width: 1440px;
+    }
+}
 /* MAIN
 -------------------------------------------- */
 .vlt-main
